@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.jpeg">
+    <title>T bite - Taste Matters</title>
+    <script src="https://kit.fontawesome.com/1a07347ba7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/logo.jpeg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                        T Bite             
+                    </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                    <div class=" collapse navbar-collapse navbar-nav" id="navbarNav">
+                        <a class = "nav-link" href="#">Home</a>
+                        <a class = "nav-link" href="#">About us</a>
+                        <a class = "nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="#">Cart</a>
+                    </div>
+
+                    <div class="search-box">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" id="search" type="search" placeholder="Search here" aria-label="Search">
+                            <button class="btn btn-warning" type="submit">Order</button>
+                        </form>
+                        <div class="result-box"></div>
+                    </div>     
+            </nav>
+        </div>
+
+        <!-- <div class="highlight active">
+            <h1>Are you starving?</h1>
+            <h3>Order now and enjoy our delicious dishes!!</h3>
+            <p>Savor the flavour at T Bite, where juicy burgers, crispy fries, yummy pizzas, frsh sandwiches and many more items are served up quick and delicious! Our speedy service and affordable prices make us the perfect pit stop for a satisfying meal on-the-go</p>
+        </div> -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <h1 class="slider-h1">Are you starving?</h1>
+                    <h3 class="slider-h3">Order now and enjoy our delicious dishes!!</h3>
+                    <p class="slider-p">Savor the flavour at T Bite, where juicy burgers, crispy fries, yummy pizzas, fresh sandwiches and many more items are served up quick and delicious! Our speedy service and affordable prices make us the perfect pit stop for a satisfying meal on-the-go.</p>
+                </div>
+                <div class="slide">
+                    <h1 class="slider-h1">Discover Our Menu!</h1>
+                    <h3 class="slider-h3">Explore a variety of mouth-watering options!</h3>
+                    <p class="slider-p">From hearty burgers to flavorful pizzas, our menu is designed to delight your taste buds. Come and experience a world of delicious choices at T Bite.</p>
+                </div>
+                <div class="slide">
+                    <h1 class="slider-h1">Enjoy Fast Delivery!</h1>
+                    <h3 class="slider-h3">Quick and convenient service at your doorstep!</h3>
+                    <p class="slider-p">Order online and get your favorite meals delivered fast and fresh. Enjoy the convenience of T Bite's delivery service without compromising on taste or quality.</p>
+                </div>
+            </div>
+    
+            <div class="dots-container">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+
+    </div>
+        
+        
+    
+
+    <div class="content">
+
+        <div class="Offers">
+            <h2>Offers available</h2>
+            <div class="slider">
+                <div class="offer-box">
+                    <div class="offer">
+                        <img src="./assets/img1.jpg">
+                        <div class="offer-info">
+                            <h3>Tasty Thursday</h3>
+                            <h2>25% off</h2>
+                            <button type="button" class="btn btn-warning">Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="offer">
+                        <img src="./assets/img2.png">
+                        <div class="offer-info">
+                            <h3>Pizza day</h3>
+                            <h2>15% off</h2>
+                            <button type="button" class="btn btn-warning">Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <h2>Our menu</h2>
+            <div class="menu-box">
+                <div class="items">
+                    <img src="./assets/frenchFries.jpeg">
+                    <h3>French Fries</h3>
+                    <div class="item-info">
+                        <span>Rs. 129</span>
+                        <span><i class="fa-regular fa-star"></i>4.4</span>
+                        <button type="button" class="btn btn-warning add">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./assets/crispy_burger.jpg">
+                    <h3>Crispy Burger</h3>
+                    <div class="item-info">
+                        <span>Rs. 149</span>
+                        <span><i class="fa-regular fa-star"></i>4.7</span>
+                        <button type="button" class="btn btn-warning add">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./assets/pizza.png">
+                    <h3>Pizza</h3>
+                    <div class="item-info">
+                        <span>Rs. 179</span>
+                        <span><i class="fa-regular fa-star"></i>4.5</span>
+                        <button type="button" class="btn btn-warning add">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./assets/Chessy_sandwich.jpg">
+                    <h3>Chessy Sandwich</h3>
+                    <div class="item-info">
+                        <span>Rs. 139</span>
+                        <span><i class="fa-regular fa-star"></i>4.6</span>
+                        <button type="button" class="btn btn-warning add">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./assets/noodles.webp">
+                    <h3>Noodles</h3>
+                    <div class="item-info">
+                        <span>Rs. 119</span>
+                        <span><i class="fa-regular fa-star"></i>4.3</span>
+                        <button type="button" class="btn btn-warning add">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./assets/pasta.jpg">
+                    <h3>Pasta</h3>
+                    <div class="item-info">
+                        <span>Rs. 125</span>
+                        <span><i class="fa-regular fa-star"></i>4.4</span>
+                        <button type="button" class="btn btn-warning add">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="root">
+                <div class="sidebar">
+                    <div class="head bg-warning"><p>My Cart</p></div>
+                    <div id="cartItem">Your cart is empty</div>
+                    <div class="foot">
+                        <h2>Total</h2>
+                        <div id="total">Rs. 0.00</div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="booking">
+            <div class="form">
+                <form id="form" action="#">
+                    <h2>Book a Table</h2>
+                    <div id="nameError" class="error"></div>
+                    <label for = "name">Enter Your Name: </label>
+                    <input type="text" id="name" placeholder="Your Name" name="name" class="form-element"><br>
+                    <div id="emailError" class="error"></div>
+                    <label for = "mailid">Enter Your Email: </label>
+                    <input type="text" id="mailid" placeholder="Your Email" name="mail" class="form-element"><br>
+                    <div id="phoneError" class="error"></div>
+                    <label for = "contact">Enter Your Phone no.: </label>
+                    <input type="number" id="contact" placeholder="Your Phone no" name="Contact" class="form-element"><br>
+                    <label for = "date">Select date and time: </label>
+                    <input type="datetime-local" id="date" name="dateTime" class="form-element" required><br>
+                    <label for="person" class="form-element"> How many people you are: </label><br>
+                    <select name="person" id="person">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select><br>
+                    <input type="text" id="request" placeholder="Special request" name="request" class="form-element">
+                    <br>
+                    <button type="Submit" class="btn btn-warning form-element">Book Now</i></button>
+                </form>
+            </div>
+            <img src="./assets/rest_img.jpg">
+        </div>
+
+        <div class="feedback-carousel">
+            <div class="feedback">
+                <h2>What Says Our Customers</h2>
+                <div class="review-box">
+                    <div class="review">
+                        <img src="./assets/testimonial-1.jpg">
+                        <div class="review-info">
+                            <h3>Mrs. Ishita</h3>
+                            <p>Lorem ipsum dolor sit amet consectetuuptas inventore, quidem dolorembis aut!</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="./assets/testimonial-2.jpg">
+                        <div class="review-info">
+                            <h3>Mr. John</h3>
+                            <p>Lorem ipsum dolor sit amet consectetuuptas inventore, quidem dolorembis aut!</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="./assets/testimonial-3.jpg">
+                        <div class="review-info">
+                            <h3>Mr. Rohit</h3>
+                            <p>Lorem ipsum dolor sit amet consectetuuptas inventore, quidem dolorembis aut!</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="./assets/testimonial-4.jpg">
+                        <div class="review-info">
+                            <h3>Mrs. Aradhya</h3>
+                            <p>Lorem ipsum dolor sit amet consectetuuptas inventore, quidem dolorembis aut!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="about">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Location <br> <i class="fa-solid fa-phone"></i> Call  +91 9500002300 <br><i class="fa-solid fa-envelope"></i> tbites@gmail.com</p>
+            </div>
+            <div class="about">
+                <h3>T bite</h3>
+                <p>We are here to provide you healthy and tasty food!!</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="about">
+                <h3>Opening Hours</h3>
+                <p>Everyday<br>10am - 11pm</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
